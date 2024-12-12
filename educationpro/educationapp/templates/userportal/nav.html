@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>    
+</head>
+ 
+<style> 
+    .aa{
+
+        /* background: linear-gradient(25deg,rgb(72, 72, 228),rgba(83, 193, 236, 0.952)); */
+        background: linear-gradient(25deg,rgb(52, 71, 88),rgba(169, 247, 240, 0.952));
+        padding: 20px; 
+
+    }
+</style>
+<body>
+    <nav class="navbar  aa ">
+        <div class="container-fluid">
+            <div class="d-flex">
+                <div>
+                    <a class="navbar-brand" href="#" style="font-size: 35px ; text-shadow: 3px 3px 3px black; color: whitesmoke; font-weight: bold;">Integrated Smart Education Management</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}  
+   
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:info@Employees' Provident Fund Organisation.com"
+                            class="text-white " style="text-decoration:none;">info@Integrated Smart Education Management System .com</a></p>
+                    <p>Phone: <a href="tel:+1234567890" style="text-decoration:none;" class="text-white">+1 234 111 890</a></p>
+                </div>
+                <div class="col-md-4 ">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com" class="text-white mr-2 p-1" style="font-size: 25px;"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" class="text-white mr-2 p-1" style="font-size: 25px;"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" class="text-white mr-2 p-1" style="font-size: 25px;"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" class="text-white p-1" style="font-size: 25px;"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Our Address</h5>
+                    <p>173 Integrated Smart Education Management System,Hyderabad, CR 12345</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <p>&copy; 2024 Integrated Smart Education Management System . All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
